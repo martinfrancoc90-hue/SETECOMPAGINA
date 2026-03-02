@@ -1,0 +1,131 @@
+
+#contacto {
+  padding: 40px 0px;
+  // background-color: #ECEFF1;
+}
+
+.contact-container {
+  border-left: 3px solid $color-blue;
+  padding: 20px;
+}
+
+.info {
+  // background-color: ;
+  h6 {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  p a {
+    text-decoration: none;
+    color:  $color-blue-dark;
+    opacity: 0.8;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-blue-dark;
+      opacity: 1;
+    }
+  }
+
+  div {
+    border-bottom: 0.1px solid rgba(230, 230, 230, 0.8);
+    margin-bottom: 20px;
+  }
+
+  i {
+    font-size: 30px;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  // Estilos para enlaces de redes sociales
+  a {
+    text-decoration: none !important;
+    border: none !important;
+    outline: none !important;
+    
+    &:hover, &:focus, &:active {
+      text-decoration: none !important;
+      border: none !important;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+
+  .fa-whatsapp {
+    color: #25D366;
+  }
+  .fa-facebook {
+    color: #3b5998;
+  }
+  .fa-linkedin {
+    color: #0077B5;
+  }
+}
+
+.content-contact {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-self: center;
+  padding-top: 20px;
+}
+
+.btn-submit {
+  background-color: $color-blue;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  padding: 12px;
+  transition: all .3s ease;
+
+  &:hover {
+    background-color: $color-blue-dark;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    text-decoration: none;
+    color: white;
+  }
+}
+
+.map {
+  .gmaps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    iframe {
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+}
+
+
+@media (max-width: $breakpoint-cell) {
+  #contacto {
+    padding: 40px 0px;
+  }
+  
+  .contact-container {
+    border: none;
+    padding: 20px;
+  }
+
+  .info {
+    margin-bottom: 20px;
+  }
+  
+  .map .gmaps iframe {
+    height: 350px !important;
+    border-radius: 8px;
+  }
+}

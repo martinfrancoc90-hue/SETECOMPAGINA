@@ -1,0 +1,179 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    // font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    // "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-family: "Montserrat", sans-serif;
+}
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    top: 0 !important;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+// Azul muy oscuro: #0B1A32
+// Azul oscuro: #102746
+// Azul intermedio: #16355C
+// Azul más claro dentro del degradado: #1D4C77
+
+$color-blue: #1d90f3;
+$color-blue-dark: #072b83;
+$color-gray-dark: #3a3a3a;
+$breakpoint-tablet: 768px;
+$breakpoint-cell: 468px;
+
+@import "./modules/loader.scss";
+@import "./modules/menu.scss";
+@import "./modules/banner.scss";
+@import "./modules/nosotros.scss";
+@import "./modules/services.scss";
+@import "./modules/counter.scss";
+@import "./modules/certificados.scss";
+@import "./modules/hundred.scss";
+@import "./modules/customers.scss";
+@import "./modules/contact.scss";
+@import "./modules/footer.scss";
+
+/** SCROLL PERSONALIZADO**/
+html::-webkit-scrollbar {
+    width: 8px; /* Tamaño del scroll en vertical */
+    height: 8px; /* Tamaño del scroll en horizontal */
+    /* display: none;  Ocultar scroll */
+}
+
+html::-webkit-scrollbar-thumb {
+    background: $color-blue;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+html::-webkit-scrollbar-thumb:hover {
+    background: $color-blue;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+html::-webkit-scrollbar-thumb:active {
+    background-color: $color-blue;
+}
+
+html::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+html::-webkit-scrollbar-track:hover,
+html::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+}
+/**FIN DEL SCROLL PERSONALIZADO**/
+
+/*MODALS POPUPS*/
+.modal-content {
+    border: none !important;
+    border-radius: 0rem !important;
+    outline: 5px solid $color-blue;
+}
+
+.modal-body {
+    max-height: calc(100vh - 210px);
+    width: 100%;
+    overflow-y: auto;
+}
+
+/** SCROLL PERSONALIZADO**/
+.modal-body::-webkit-scrollbar {
+    width: 8px; /* Tamaño del scroll en vertical */
+    height: 8px; /* Tamaño del scroll en horizontal */
+    /* display: none;  Ocultar scroll */
+}
+.modal-body::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.modal-body::-webkit-scrollbar-thumb:hover {
+    background: #b3b3b3;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+/* Cambiamos el fondo cuando esté en active */
+.modal-body::-webkit-scrollbar-thumb:active {
+    background-color: #999999;
+}
+
+.modal-body::-webkit-scrollbar-track {
+    background: #e1e1e1;
+    border-radius: 4px;
+}
+/* Cambiamos el fondo cuando esté en active o hover */
+.modal-body::-webkit-scrollbar-track:hover,
+.modal-body::-webkit-scrollbar-track:active {
+    background: #d4d4d4;
+}
+/**FIN DEL SCROLL MODAL PERSONALIZADO**/
+
+h2.title {
+    font-size: 48px;
+}
+
+.line-services {
+    position: relative;
+    width: 100px;
+    padding: 3px 0;
+    background-color: $color-blue-dark;
+    border-radius: 10px;
+}
+
+.mini-circle {
+    position: absolute;
+    top: -4px;
+    width: 15px;
+    padding: 8px 0;
+    border-radius: 50%;
+    background-color: $color-blue;
+    animation: move 6s forwards infinite linear;
+}
+
+.content-title {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(90px);
+    }
+}
+
+#buttom-to-top {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 1px; /* Rounded corners */
+    font-size: 15px;
+    z-index: 99;
+    background-color: $color-blue-dark;
+    color: white;
+}
+
+@media (max-width: $breakpoint-cell) {
+    h2.title {
+        font-size: 32px;
+    }
+}

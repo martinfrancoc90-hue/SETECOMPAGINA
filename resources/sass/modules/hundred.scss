@@ -1,0 +1,20 @@
+
+.hundred {
+  background-color: $color-blue;
+  color: #fff;
+  padding: 30px;
+  font-size: 30px;
+  border-radius: 15px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+
+.hundred .value {
+  font-size: 90px;
+}
+
+@media (max-width: $breakpoint-cell) {
+  .hundred {
+    font-size: 20px;
+  }
+}

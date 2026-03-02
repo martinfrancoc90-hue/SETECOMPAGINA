@@ -1,0 +1,53 @@
+#nosotros {
+  padding: 80px 0px;
+  background-color: $color-blue;
+
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.square {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  height: 100%;
+  padding: 20px 30px !important;
+  margin: auto;
+  text-align: justify;
+  transition: all 0.5s ease-in;
+  color: $color-blue-dark;
+
+  .title-square {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .icon-square {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    i {
+      font-size: 50px;
+      color: var($color-blue);
+    }
+  }
+
+  &:hover {
+    background-color: $color-blue-dark;
+    color: #fff;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: $breakpoint-cell) {
+  #nosotros {
+    .row .col-lg-4 {
+      margin-bottom: 20px
+    }
+  }
+}

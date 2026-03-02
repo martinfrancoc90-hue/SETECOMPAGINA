@@ -1,0 +1,81 @@
+
+.hundred-percent-section, .proyects-counters {
+  padding: 60px 0px;
+}
+
+.hundred-percent-section {
+  background-color: #ffffff;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.proyects-counters {
+  background-color: #ffffff;
+}
+
+.content-description {
+  color: $color-blue-dark;
+  
+
+  .value {
+    font-size: 80px;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+}
+
+
+.single-counter {
+  text-align: center;
+  color: #ffffff;
+  padding: 16px;
+  border: 1px solid white;
+  border-radius: 10px;
+  gap: 16px;
+  background-color: $color-blue-dark;
+  background-color: #072b83;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.content-icon-counter {
+  padding: 18px;
+  border-radius: 100%;
+  background-color: #16355C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-counter i {
+  font-size: 50px;
+}
+
+.counter {
+  font-size: 30px;
+}
+
+.single-counter p {
+  font-size: 18px;
+}
+
+@media (max-width: $breakpoint-cell) {
+  .hundred-percent-section, .proyects-counters {
+    padding: 20px 0px;
+  }
+
+  // .single-counter {
+  //   margin-top: 20px;
+  //   i {
+  //     margin: 0;
+  //     margin-bottom: 10px;
+  //   }
+  // }
+}
