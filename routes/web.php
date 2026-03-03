@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AdminProductoController;
 use App\Http\Controllers\AdminCategoriaController;
+use App\Http\Controllers\AdminConfiguracionController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::post('/send-message', [HomeController::class, 'send'])->name('send.message');
@@ -31,4 +32,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/categorias/{id}/editar', [AdminCategoriaController::class, 'edit'])->name('admin.categorias.edit');
     Route::put('/categorias/{id}', [AdminCategoriaController::class, 'update'])->name('admin.categorias.update');
     Route::delete('/categorias/{id}', [AdminCategoriaController::class, 'destroy'])->name('admin.categorias.destroy');
+
+    // Configuración
+    Route::get('/configuracion', [AdminConfiguracionController::class, 'index'])->name('admin.configuracion.index');
+    Route::post('/configuracion', [AdminConfiguracionController::class, 'update'])->name('admin.configuracion.update');
 });

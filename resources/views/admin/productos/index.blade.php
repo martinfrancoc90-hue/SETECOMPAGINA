@@ -22,6 +22,9 @@
         <a href="{{ route('admin.categorias.index') }}" class="btn btn-outline-light btn-sm me-2">
             <i class="fas fa-tags"></i> Categorías
         </a>
+        <a href="{{ route('admin.configuracion.index') }}" class="btn btn-outline-light btn-sm me-2">
+            <i class="fas fa-cog"></i> Configuración
+        </a>
         <a href="{{ route('logout') }}" class="btn btn-outline-light btn-sm"
            onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
             <i class="fas fa-sign-out-alt"></i> Salir

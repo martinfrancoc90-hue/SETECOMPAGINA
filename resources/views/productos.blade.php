@@ -45,14 +45,13 @@
                                 @endif
                                 @if($producto->consultar)
                                     <p class="producto-precio consultar-precio">Precio a consultar</p>
-                                    <a href="https://wa.me/51943873691?text=Hola,%20me%20interesa%20el%20producto:%20{{ urlencode($producto->nombre) }}"
+                                    <a href="https://wa.me/{{ \App\Models\Configuracion::get('whatsapp_numero') }}?text={{ urlencode(\App\Models\Configuracion::get('whatsapp_mensaje')) }}%20{{ urlencode($producto->nombre) }}"
                                        target="_blank" class="btn-producto">
                                         <i class="fab fa-whatsapp"></i> Consultar
                                     </a>
                                 @else
                                     <p class="producto-precio">$ {{ $producto->precio }}</p>
-                                    <a href="https://wa.me/51943873691?text=Hola,%20quiero%20comprar:%20{{ urlencode($producto->nombre) }}"
-                                       target="_blank" class="btn-producto disponible-btn">
+                                    <a href="https://wa.me/{{ \App\Models\Configuracion::get('whatsapp_numero') }}?text={{ urlencode(\App\Models\Configuracion::get('whatsapp_mensaje')) }}%20{{ urlencode($producto->nombre) }}"                                       target="_blank" class="btn-producto disponible-btn">
                                         <i class="fab fa-whatsapp"></i> Comprar
                                     </a>
                                 @endif
