@@ -1,6 +1,6 @@
 {
-    "/css/app.css": "/css/app.css?id=adf170a95f6c15ac3542",
-    "/css/plantilla.css": "/css/plantilla.css?id=78acf2893635cdbd14cf",
-    "/js/plantilla.js": "/js/plantilla.js?id=b1e17ddc8957ac3eba42",
-    "/js/core.js": "/js/core.js?id=1814aa19258fcb3a2af3"
+    "/css/app.css": "/setecom/public/css/app.css",
+    "/css/plantilla.css": "/setecom/public/css/plantilla.css",
+    "/js/plantilla.js": "/setecom/public/js/plantilla.js",
+    "/js/core.js": "/setecom/public/js/core.js"
 }

@@ -1,0 +1,146 @@
+#productos {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+
+    .filtros-card {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 80px;
+
+        .filtro-titulo {
+            font-weight: 700;
+            color: $color-blue-dark;
+            border-bottom: 2px solid $color-blue;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+        }
+
+        .lista-filtros {
+            padding: 0;
+            li {
+                padding: 6px 0;
+                border-bottom: 1px solid #f0f0f0;
+                label {
+                    cursor: pointer;
+                    font-size: 14px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    input[type="radio"] {
+                        accent-color: $color-blue;
+                    }
+                }
+            }
+        }
+    }
+
+    .producto-card {
+        background: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+        position: relative;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+
+        .producto-badge {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 6px 14px;
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+            z-index: 1;
+            clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+
+            &.consultar {
+                background-color: #6c757d;
+            }
+            &.disponible {
+                background-color: #28a745;
+            }
+        }
+
+        .producto-img {
+            width: 100%;
+            height: 180px;
+            overflow: hidden;
+            background: #f0f0f0;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: transform 0.3s;
+            }
+
+            &:hover img {
+                transform: scale(1.05);
+            }
+        }
+
+        .producto-info {
+            padding: 15px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+
+            .producto-nombre {
+                font-size: 14px;
+                font-weight: 600;
+                color: $color-gray-dark;
+                margin-bottom: 8px;
+                flex: 1;
+            }
+
+            .producto-precio {
+                font-size: 18px;
+                font-weight: 700;
+                color: $color-blue-dark;
+                margin-bottom: 12px;
+
+                &.consultar-precio {
+                    font-size: 13px;
+                    color: #6c757d;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+
+            .btn-producto {
+                display: block;
+                text-align: center;
+                padding: 8px;
+                border-radius: 6px;
+                font-size: 13px;
+                font-weight: 600;
+                text-decoration: none;
+                background-color: #6c757d;
+                color: white;
+                transition: background-color 0.2s;
+
+                &:hover {
+                    background-color: #5a6268;
+                    color: white;
+                }
+
+                &.disponible-btn {
+                    background-color: $color-blue-dark;
+                    &:hover {
+                        background-color: $color-blue;
+                    }
+                }
+            }
+        }
+    }
+}

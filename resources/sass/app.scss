@@ -1,6 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Newsreader&display=swap");
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +44,8 @@ $breakpoint-cell: 468px;
 @import "./modules/customers.scss";
 @import "./modules/contact.scss";
 @import "./modules/footer.scss";
+@import "./modules/productos.scss";
+
 
 /** SCROLL PERSONALIZADO**/
 html::-webkit-scrollbar {

@@ -30,7 +30,15 @@
                 <a href="#clientes" target="_self">Clientes</a>
             </li>
             <li class="menu-item">
+            <a href="{{ url('/productos') }}" target="_self">Productos</a>
+            </li>
+            <li class="menu-item">
                 <a href="#contacto" target="_self">Contacto</a>
+            </li>
+            <li class="menu-item">
+                <a href="{{ url('/admin') }}" target="_self">
+                    <i class="fas fa-lock"></i> Admin
+                </a>
             </li>
         </ul>
     </nav>

@@ -12,42 +12,32 @@
                         <div class="content">
                             <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-cctv">
                                 <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
-                                <div class="name-service">Circuito Cerrado de Televisión (CCTV)</>
-                                </div>
+                                <div class="name-service">Circuito Cerrado de Televisión (CCTV)</div>
                                 @include('services_setecom/popup_cctv')
                             </div>
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-sist-control-acceso">
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-sist-control-acceso">
                                 <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
-                                <div class="name-service">Sistema de Control de Accesos (ACS)</>
-                                </div>
+                                <div class="name-service">Sistema de Control de Accesos (ACS)</div>
                                 @include('services_setecom/popup_sist_control_acceso')
                             </div>
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-sist-per-music">
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-sist-per-music">
                                 <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
-                                <div class="name-service">Sistema de Perifoneo y Musica Ambiental (PAS-PVAS)</>
-                                </div>
+                                <div class="name-service">Sistema de Perifoneo y Musica Ambiental (PAS-PVAS)</div>
                                 @include('services_setecom/popup_sist_per_music')
                             </div>
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-sist-contr-intr">
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-sist-contr-intr">
                                 <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
-                                <div class="name-service">Sistema Contra Intrusión</>
-                                </div>
+                                <div class="name-service">Sistema Contra Intrusión</div>
                                 @include('services_setecom/popup_sist_contr_intr')
                             </div>
                             <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-contr-inc">
                                 <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
-                                <div class="name-service">Sistema de Agua Contra Incendios (ACI)</>
-                                </div>
+                                <div class="name-service">Sistema de Agua Contra Incendios (ACI)</div>
                                 @include('services_setecom/popup_contr_inc')
                             </div>
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-sist-alarma-detec-inc">
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-sist-alarma-detec-inc">
                                 <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
-                                <div class="name-service">Sistema de Alarma y Deteccion de Incendios (DACI)</>
-                                </div>
+                                <div class="name-service">Sistema de Alarma y Deteccion de Incendios (DACI)</div>
                                 @include('services_setecom/popup_sist_alarma_detec_inc')
                             </div>
                         </div>
@@ -60,48 +50,29 @@
                     <div class="card-body">
                         <h3 class="card-title">02. Diseños de Proyectos</h3>
                         <div class="content">
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-dise-ing-proyectos">
-                                <div class="icon-service">
-                                    <i class="fas fa-angle-double-right"></i>
-                                </div>
-                                <div class="name-service">Diseño e Ingenieria de Proyectos</>
-                                </div>
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-dise-ing-proyectos">
+                                <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
+                                <div class="name-service">Diseño e Ingenieria de Proyectos</div>
                                 @include('services_setecom/popup_dise_ing_proyectos')
                             </div>
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-geren-proyectos">
-                                <div class="icon-service">
-                                    <i class="fas fa-angle-double-right"></i>
-                                </div>
-                                <div class="name-service">Gerencia de Proyectos</>
-                                </div>
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-geren-proyectos">
+                                <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
+                                <div class="name-service">Gerencia de Proyectos</div>
                                 @include('services_setecom/popup_geren_proyectos')
                             </div>
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-super-proyectos">
-                                <div class="icon-service">
-                                    <i class="fas fa-angle-double-right"></i>
-                                </div>
-                                <div class="name-service">Supervisión de Proyectos</>
-                                </div>
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-super-proyectos">
+                                <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
+                                <div class="name-service">Supervisión de Proyectos</div>
                                 @include('services_setecom/popup_super_proyectos')
                             </div>
                             <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-ases-cons">
-                                <div class="icon-service">
-                                    <i class="fas fa-angle-double-right"></i>
-                                </div>
-                                <div class="name-service">Asesoria y Consultoria</>
-                                </div>
+                                <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
+                                <div class="name-service">Asesoria y Consultoria</div>
                                 @include('services_setecom/popup_asesoria_consultoria')
                             </div>
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-implement-proyectos">
-                                <div class="icon-service">
-                                    <i class="fas fa-angle-double-right"></i>
-                                </div>
-                                <div class="name-service">Implementación de Proyectos</>
-                                </div>
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-implement-proyectos">
+                                <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
+                                <div class="name-service">Implementación de Proyectos</div>
                                 @include('services_setecom/popup_implement_proyectos')
                             </div>
                         </div>
@@ -114,17 +85,16 @@
                     <div class="card-body">
                         <h3 class="card-title">03. Sistema Eléctrico</h3>
                         <div class="content">
-                            <div class="each-services d-flex" data-bs-toggle="modal"
-                                data-bs-target="#serv-elect-baja-media-ten">
+                            <div class="each-services d-flex" data-bs-toggle="modal" data-bs-target="#serv-elect-baja-media-ten">
                                 <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
-                                <div class="name-service">Sistema Eléctrico de Baja y Media Tensión</>
-                                </div>
+                                <div class="name-service">Sistema Eléctrico de Baja y Media Tensión</div>
                                 @include('services_setecom/popup_elect_baja_media_ten')
                             </div>
                         </div>
                     </div>
                 </article>
             </div>
+
             <div class="col-lg-6 mb-3">
                 <article class="card">
                     <div class="card-body">
@@ -149,6 +119,28 @@
                     </div>
                 </article>
             </div>
+
+            <div class="col-lg-12 mb-3">
+                <article class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">05. Productos</h3>
+                        <div class="content">
+                            @foreach(\App\Models\Categoria::orderBy('nombre')->get() as $cat)
+                            <div class="each-services d-flex">
+                                <div class="icon-service"><i class="fas fa-angle-double-right"></i></div>
+                                <div class="name-service">{{ $cat->nombre }}</div>
+                            </div>
+                            @endforeach
+                            <div class="mt-3">
+                                <a href="{{ url('/productos') }}" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-shopping-cart"></i> Ver todos los productos
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
         </div>
     </div>
 </section>

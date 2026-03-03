@@ -35,4 +35,3 @@ mix.sass("resources/sass/app.scss", "public/css/app.css")
     .scripts("resources/vendor/js/core.js", "public/js/core.js")
     .copy("resources/vendor/fontawesome/webfonts", "public/webfonts")
     .copy("resources/vendor/css/fresco", "public/css/fresco")
-    .version();
